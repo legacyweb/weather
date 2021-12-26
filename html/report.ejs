@@ -2,8 +2,11 @@
     <h3><%= location.city %>, <%= location.state %></h3>
     <br>
     <table>
-        <td colspan="2">
-            <font face="Tahoma"><h2><%= weatherInfo.current.condition.text%></h2></font>
+        <td>
+            <img src="<%= weatherInfo.current.condition.icon %>">
+        </td>
+        <td>
+            <font face="Tahoma"><h2><%= weatherInfo.current.condition.text %></h2></font>
         </td>
     </table>
 </center>

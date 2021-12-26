@@ -24,8 +24,8 @@
   "dependencies": {
     "cookie-parser": "1.4.6",
     "express": "4.17.2",
-    "image-convert": "0.1.33",
     "ip-info-finder": "1.1.5",
+    "jimp": "^0.16.1",
     "legacyweb-pages": "1.0.1",
     "lru-cache": "6.0.0",
     "public-ip": "4.0.4",
