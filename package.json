@@ -1,15 +1,20 @@
 {
-  "name": "weather",
+  "name": "legacy-weather",
   "version": "1.0.0",
   "description": "Weather page for legacyweb",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/legacyweb/weather.git"
+    "url": "git+ssh://git@github.com/legacyweb/weather.git"
   },
+  "keywords": [
+    "weather",
+    "web",
+    "nostalgia"
+  ],
   "author": "Justin Schwartzbeck",
   "license": "ISC",
   "bugs": {
@@ -17,7 +22,14 @@
   },
   "homepage": "https://github.com/legacyweb/weather#readme",
   "dependencies": {
-    "ip-info-finder": "^1.1.5",
-    "public-ip": "^4.0.4"
+    "cookie-parser": "1.4.6",
+    "express": "4.17.2",
+    "image-convert": "0.1.33",
+    "ip-info-finder": "1.1.5",
+    "legacyweb-pages": "1.0.1",
+    "lru-cache": "6.0.0",
+    "public-ip": "4.0.4",
+    "weather-api-client": "1.0.0",
+    "zipcodes": "8.0.0"
   }
 }
