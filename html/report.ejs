@@ -11,10 +11,10 @@
         </tr>
         <tr>
             <td valign="top">
-                <center><b><%= weatherInfo.current.temp_f %> F</b></center>
+                <center><b><font face="Tahoma"><%= weatherInfo.current.temp_f %> F</font></b></center>
             </td>
             <td valign="top">
-                <center><b><%= weatherInfo.current.wind_mph%> mph</b></center>
+                <center><b><font face="Tahoma"><%= weatherInfo.current.wind_mph%> mph</font></b></center>
             </td>
         </tr>
         <tr>
@@ -33,10 +33,11 @@
         <table width="400px">
             <% weatherInfo.forecast.forecastday.forEach(day => { %>
                 <tr>
-                    <td><%= day.dayOfWeek %></td>
-                    <td><img src="<%= day.day.condition.icon %>"></td>
-                    <td>H <%= day.day.maxtemp_f%>F</td>
-                    <td>L <%= day.day.mintemp_f%>F</td>
+                    <td><font face="Tahoma"><%= day.dayOfWeek %></font></td>
+                    <td><font face="Tahoma"><img src="<%= day.day.condition.icon %>"></font></td>
+                    <td><font face="Tahoma"><b><%= day.day.condition.text %></b></font></td>
+                    <td><font face="Tahoma">H <%= day.day.maxtemp_f%>F</font></td>
+                    <td><font face="Tahoma">L <%= day.day.mintemp_f%>F</font></td>
                 </tr>
             <% }); %>
         </table>
