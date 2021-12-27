@@ -1,12 +1,46 @@
 <center>
     <h3><%= location.city %>, <%= location.state %></h3>
-    <br>
-    <table>
-        <td>
-            <img src="<%= weatherInfo.current.condition.icon %>">
-        </td>
-        <td>
-            <font face="Tahoma"><h2><%= weatherInfo.current.condition.text %></h2></font>
-        </td>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <img src="<%= weatherInfo.current.condition.icon %>">
+            </td>
+            <td>
+                <font face="Tahoma"><h1><%= weatherInfo.current.condition.text %></h1></font>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <center><b><%= weatherInfo.current.temp_f %> F</b></center>
+            </td>
+            <td valign="top">
+                <center><b><%= weatherInfo.current.wind_mph%> mph</b></center>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" padding="4px">
+                <br>
+                <form action="/">
+                    <input type="text" size="5" id="zip", name="zip">
+                    <input type="submit" value="Change Location">
+                </form>
+                <br>
+            </td>
+        </tr>
     </table>
+    <p></p>
+    <% if (forecast) {%>
+        <table width="400px">
+            <% weatherInfo.forecast.forecastday.forEach(day => { %>
+                <tr>
+                    <td><%= day.dayOfWeek %></td>
+                    <td><img src="<%= day.day.condition.icon %>"></td>
+                    <td>H <%= day.day.maxtemp_f%>F</td>
+                    <td>L <%= day.day.mintemp_f%>F</td>
+                </tr>
+            <% }); %>
+        </table>
+    <br>
+    <br>
+    <%}%>
 </center>

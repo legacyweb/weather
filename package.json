@@ -29,7 +29,7 @@
     "legacyweb-pages": "1.0.1",
     "lru-cache": "6.0.0",
     "public-ip": "4.0.4",
-    "weather-api-client": "1.0.0",
+    "weather-api-client": "1.0.1",
     "zipcodes": "8.0.0"
   }
 }
