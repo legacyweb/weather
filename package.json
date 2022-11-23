@@ -23,10 +23,10 @@
   "homepage": "https://github.com/legacyweb/weather#readme",
   "dependencies": {
     "cookie-parser": "1.4.6",
-    "express": "4.17.2",
-    "ip-info-finder": "1.1.5",
+    "ejs": "^3.1.8",
+    "ip-to-location": "^1.0.1",
     "jimp": "^0.16.1",
-    "legacyweb-pages": "1.0.2",
+    "legacyweb-pages": "1.0.3",
     "lru-cache": "6.0.0",
     "public-ip": "4.0.4",
     "weather-api-client": "1.0.1",
