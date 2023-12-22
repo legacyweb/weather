@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:18.19-alpine
 MAINTAINER Justin Schwartzbeck <justinmschw@gmail.com>
 
 WORKDIR /app
