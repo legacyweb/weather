@@ -1,6 +1,6 @@
 {
   "name": "legacy-weather",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Weather page for legacyweb",
   "main": "app.js",
   "scripts": {
