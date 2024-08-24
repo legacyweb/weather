@@ -28,7 +28,7 @@
     "jimp": "0.22.12",
     "legacyweb-pages": "1.0.8",
     "lru-cache": "11.0.0",
-    "public-ip": "7.0.1",
+    "public-ip": "^7.0.1",
     "weather-api-client": "1.0.2",
     "zipcodes": "8.0.0"
   }
